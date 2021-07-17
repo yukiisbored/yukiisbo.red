@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-cerise
+  }
+
+  body {
+    @apply bg-gradient-to-br from-cerise to-orange p-4 max-w-screen-2xl mx-auto
+  }
+
+  header, section {
+    @apply bg-white p-8 rounded-xl
+  }
+
+  section {
+    @apply mt-4
+  }
+
+  h1 {
+    @apply font-bold text-8xl
+  }
+
+  h2 {
+    @apply text-2xl font-bold
+  }
+}
+
+@layer components {
+  ul.points {
+    @apply list-disc pl-10 mt-2 text-xl
+  }
+
+  ul.points li {
+    @apply mt-2
+  }
+
+  ul.socials li {
+    @apply font-bold text-4xl inline-block m-2
+  }
+
+  p.tagline {
+    @apply font-medium text-4xl mt-2
+  }
+}

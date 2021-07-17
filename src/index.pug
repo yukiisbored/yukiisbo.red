@@ -8,7 +8,74 @@ html
 
     link(rel='stylesheet' href='main.css')
 
-  body.bg-gradient-to-br.from-cerise.to-orange.p-4
+  body
     div.flex.flex-col.md_flex-row
-      div.z-0.flex-none
-        img.filter.drop-shadow-lg.w-auto.h-screen(src='character.png')
+      div.flex-none.z-0.mx-auto.md_mx-0.md_-mr-60
+        img.filter.drop-shadow-lg.w-auto.h-screen(src='character.png' alt='Yuki')
+
+      div.flex.flex-col.z-10.my-8.w-full.filter.drop-shadow
+        header.text-center
+          h1 Yuki is Bored
+          p.tagline Professional Penguin Strangler
+
+        section.text-center
+          -
+            var socials = [
+              { 't': 'Email', 'l': 'mailto:hi@yukiisbo.red' },
+              { 't': 'Fediverse', 'l': 'https://bsd.network/@yuki_is_bored' },
+              { 't': 'Matrix', 'l': 'https://matrix.to/#/@yuki:backalley.club' },
+              { 't': 'Telegram', 'l': 'https://telegram.me/yuki_is_bored' },
+              { 't': 'XMPP', 'l': 'xmpp:yuki@miqote.com' },
+              { 't': 'Twitter', 'l': 'https://twitter.com/yuki_is_bored' },
+              { 't': 'LinkedIn', 'l': 'https://linkedin.com/in/yukiisbored' },
+              { 't': 'Steam', 'l': 'https://steamcommunity.com/id/yuki_is_bored' },
+              { 't': 'GOG', 'l': 'https://www.gog.com/u/yuki_is_bored' },
+              { 't': 'Xbox', 'l': 'http://live.xbox.com/Profile?Gamertag=YukiIsBored3216' },
+              { 't': 'GitHub', 'l': 'https://github.com/yukiisbored' },
+              { 't': 'GitLab', 'l': 'https://gitlab.com/yuki_is_bored' },
+              { 't': 'itch.io', 'l': 'https://yukiisbored.itch.io' },
+            ];
+
+          h2.hidden Links
+
+          ul.socials
+            each social in socials
+              li.font-bold.text-4xl.inline-block.m-2
+                a(href=social.l) #{social.t}
+
+        section
+          h2.
+            👋 Hello world! I'm Yuki, a
+            #[a(href='https://en.wikipedia.org/wiki/Hacker_culture') hacker]
+            who tinkers with technology.
+
+          ul.points
+            li.
+              👷 Sitting at the helm of
+              #[a(href='https://kubernetes.io') 🚢 Kubernetes clusters]
+              and maintaining
+              #[a(href='https://docker.com') 🐋 Docker images]
+              for food.
+
+            li.
+              🛠 Proud user of
+              #[a(href='https://openbsd.org') 🐡 OpenBSD],
+              #[a(href='https://freebsd.org') 😈 FreeBSD], and
+              #[a(href='https://nixos.org') ❄ NixOS].
+
+            li.
+              🧑‍💻 Interested in functional programming and formal
+              verification:
+              #[a(href='https://haskell.org') Haskell],
+              #[a(href='https://en.wikipedia.org/wiki/Lisp_(programming_language)') Lisp],
+              #[a(href='https://www.fstar-lang.org') F*],
+              #[a(href='https://coq.inria.fr') Coq].
+
+            li.
+              ✍ Helping people one note at a time:
+              #[a(href='https://notes.yukiisbo.red') notes.yukiisbo.red].
+
+            li.
+              🖌 Character art by
+              #[a(href='https://twitter.com/Luciel_Teo') Luciel Teo].
+              #[a(href='https://creativecommons.org/licenses/by-sa/4.0/') CC BY-SA 4.0]
