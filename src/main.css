@@ -4,11 +4,11 @@
 
 @layer base {
   a {
-    @apply text-cerise
+    @apply text-purple
   }
 
   body {
-    @apply bg-gradient-to-br from-cerise to-orange p-4 max-w-screen-2xl mx-auto
+    @apply bg-gradient-to-br from-orange via-cerise to-purple p-4 max-w-screen-2xl mx-auto
   }
 
   header, section {
