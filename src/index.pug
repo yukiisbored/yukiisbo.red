@@ -9,11 +9,11 @@ html(lang='en')
     link(rel='stylesheet' href='main.css')
 
   body
-    div.flex.flex-col.md_flex-row
-      div.flex-none.z-0.mx-auto.md_mx-0.md_-mr-60
-        img.filter.drop-shadow-lg.w-auto.h-auto.md_h-screen(src='character.png' alt='Yuki')
+    div
+      div.char
+        img.char(src='character.png' alt='Yuki' width='994px' height='1536px')
 
-      div.flex.flex-col.z-10.my-8.w-full.filter.drop-shadow
+      div.content
         header.text-center
           h1 Yuki is Bored
           p.tagline Professional Penguin Strangler
@@ -40,7 +40,7 @@ html(lang='en')
 
           ul.socials
             each social in socials
-              li.font-bold.text-4xl.inline-block.m-2
+              li
                 a(href=social.l) #{social.t}
 
         section

@@ -44,4 +44,20 @@
   p.tagline {
     @apply font-medium text-4xl mt-2
   }
+
+  img.char {
+    @apply filter drop-shadow-lg w-auto h-auto md_h-screen
+  }
+
+  div.container {
+    @apply flex flex-col md_flex-row
+  }
+
+  div.char {
+    @apply flex-none z-0 mx-auto -mb-96 md_mx-0 md_-mr-60 md_mb-0
+  }
+
+  div.content {
+    @apply flex flex-col z-10 my-8 w-full filter drop-shadow
+  }
 }
