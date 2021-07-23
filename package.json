@@ -1,8 +1,8 @@
 {
   "version": "0.0.0",
   "scripts": {
-    "start": "parcel src/index.pug",
-    "build": "parcel build src/index.pug"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "devDependencies": {
     "@parcel/transformer-pug": "^2.0.0-beta.3.1",
