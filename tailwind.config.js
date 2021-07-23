@@ -1,8 +1,7 @@
 module.exports = {
   separator: '_',
   purge: [
-    './src/**/*.pug',
-    './src/**/*.html',
+    './src/**/*.jago',
   ],
   darkMode: false,
   theme: {
