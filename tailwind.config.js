@@ -2,6 +2,7 @@ module.exports = {
   separator: '_',
   purge: [
     './src/**/*.pug',
+    './src/**/*.html',
   ],
   darkMode: false,
   theme: {
